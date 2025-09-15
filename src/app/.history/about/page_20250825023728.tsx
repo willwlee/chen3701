@@ -153,7 +153,7 @@ export default function About() {
             <h3 className="mt-4 text-lg font-medium text-zinc-800 dark:text-zinc-100">William Lee</h3>
             <p className="mt-1 text-zinc-600 dark:text-zinc-400">will.lee@utah.edu</p>
             <p className="mt-2 text-sm text-zinc-600 dark:text-zinc-400">
-              Brief bio or description of the member&apos;'s contributions to the project.
+              Brief bio or description of the member's contributions to the project.
             </p>
           </div>
 
@@ -167,7 +167,7 @@ export default function About() {
             <h3 className="mt-4 text-lg font-medium text-zinc-800 dark:text-zinc-100">Jasmine Linares</h3>
             <p className="mt-1 text-zinc-600 dark:text-zinc-400">Role/Title</p>
             <p className="mt-2 text-sm text-zinc-600 dark:text-zinc-400">
-              Brief bio or description of the member&apos;'s contributions to the project.
+              Brief bio or description of the member's contributions to the project.
             </p>
           </div>
 
@@ -181,7 +181,7 @@ export default function About() {
             <h3 className="mt-4 text-lg font-medium text-zinc-800 dark:text-zinc-100">Nathan Porter</h3>
             <p className="mt-1 text-zinc-600 dark:text-zinc-400">Role/Title</p>
             <p className="mt-2 text-sm text-zinc-600 dark:text-zinc-400">
-              Brief bio or description of the member&apos;'s contributions to the project. 
+              Brief bio or description of the member's contributions to the project. 
             </p>
           </div> 
         </div>
