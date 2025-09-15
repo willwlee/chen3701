@@ -107,7 +107,7 @@ export default function Blog() {
         </div>
         <div>
           <p>
-            Your team&apos;s assessment of the overall effectiveness of your experiment.
+            Your team&apos;'s assessment of the overall effectiveness of your experiment.
           </p>
         </div>
       </section>
