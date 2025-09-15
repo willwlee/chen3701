@@ -10,18 +10,18 @@ export async function GET(req: Request) {
   }
 
   let author = {
-    name: 'Sathya Tadinada',
-    email: 'sathya@tadinada.com',
+    name: 'William Lee & Sathya Tadinada',
+    email: 'williamwooseoklee@gmail.com',
   }
 
   let feed = new Feed({
     title: author.name,
-    description: 'This is my personal blog! I write about things I find interesting.',
+    description: 'CHEN 3701 Website',
     author,
     id: siteUrl,
     link: siteUrl,
-    image: `${siteUrl}/favicon.ico`,
-    favicon: `${siteUrl}/favicon.ico`,
+    image: `@/src/app/beaker.ico`,
+    favicon: `@/src/app/beaker.ico`,
     copyright: `All rights reserved ${new Date().getFullYear()}`,
     feedLinks: {
       rss2: `${siteUrl}/feed.xml`,
