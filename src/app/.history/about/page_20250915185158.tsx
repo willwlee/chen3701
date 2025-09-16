@@ -116,12 +116,13 @@ export default function About() {
           </h3>
           <div className="mt-6 space-y-7 text-base text-zinc-600 dark:text-zinc-300">
             <p>
-              We are investigating the effectiveness of Amberlyte resin to soften hard water by removing Ca<sup>2+</sup> ions from DI & tap water.
+              We are investigating the effectiveness of Amberlyte resin in water softening, specifically in removing Ca<sup>2+</sup> ions from DI & tap water.
               The fundamental theory is based on ion exchange, where Ca<sup>2+</sup> is exchanged for H+ ions and becomes stuck in the resin.
+              Include an illustration or clearly labeled and readably sized photo.
             </p>
             <p>
-              Evaluation is based on Ca<sup>2+</sup> concentration, measured in mg/L using a Ca<sup>2+</sup> selective electrode. 
-              The measurement range of the electrode is (1 to 40,000 mg/mL).
+              Ca<sup>2+</sup> concentration is measured in mg/L using a Ca<sup>2+</sup>-selective electrode. 
+              The measurement range of the electrode is (1 g/mL to 40,000 mg/mL).
             </p>
           </div>
         </div>

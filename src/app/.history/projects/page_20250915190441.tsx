@@ -5,10 +5,11 @@ import Image from 'next/image'
 import { Card } from '@/components/Card'
 import { SimpleLayout } from '@/components/SimpleLayout'
 
-import logoTheory from '@/images/logos/data-theory.svg'
-import logoExperiment from '@/images/logos/data-results.svg'
-import logoResults from '@/images/logos/data-experiment.svg'
-import logoCompare from '@/images/logos/data-compare.svg'
+import logoAnimaginary from '@/images/logos/animaginary.svg'
+import logoCosmos from '@/images/logos/cosmos.svg'
+import logoHelioStream from '@/images/logos/helio-stream.svg'
+import logoOpenShuttle from '@/images/logos/open-shuttle.svg'
+import logoPlanetaria from '@/images/logos/planetaria.svg'
 
 /* -------------------------------------------------------------------------- */
 /*  Project data                                                              */
@@ -26,7 +27,7 @@ const projects: Project[] = [
     name: 'Theoretical Background',
     description:
       'Theory',
-    logo: logoTheory,
+    logo: logoAnimaginary,
     tags: ['Theory'],
   },  
   
@@ -34,7 +35,7 @@ const projects: Project[] = [
     name: 'Experimental Data',
     description:
       'Experimental Data Here',
-    logo: logoExperiment,
+    logo: logoPlanetaria,
     tags: ['Data'],
   },
 
@@ -42,14 +43,14 @@ const projects: Project[] = [
     name: 'Explanation of Results',
     description:
       'Explain Results',
-    logo: logoResults,
+    logo: logoHelioStream,
     tags: ['Analysis'],
   },
-
+  
   {
     name: 'Comparison of Results',
     description: 'Compare Results',
-    logo: logoCompare,
+    logo: logoCosmos,
     tags: ['Analysis'],
   },
 ]

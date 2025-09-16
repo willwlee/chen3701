@@ -6,8 +6,8 @@ import { Card } from '@/components/Card'
 import { SimpleLayout } from '@/components/SimpleLayout'
 
 import logoTheory from '@/images/logos/data-theory.svg'
-import logoExperiment from '@/images/logos/data-results.svg'
-import logoResults from '@/images/logos/data-experiment.svg'
+import logoExperiment from '@/images/logos/data-experiment.svg'
+import logoResults from '@/images/logos/data-results.svg'
 import logoCompare from '@/images/logos/data-compare.svg'
 
 /* -------------------------------------------------------------------------- */

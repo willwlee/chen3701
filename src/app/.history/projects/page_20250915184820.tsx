@@ -5,10 +5,11 @@ import Image from 'next/image'
 import { Card } from '@/components/Card'
 import { SimpleLayout } from '@/components/SimpleLayout'
 
-import logoTheory from '@/images/logos/data-theory.svg'
-import logoExperiment from '@/images/logos/data-results.svg'
-import logoResults from '@/images/logos/data-experiment.svg'
-import logoCompare from '@/images/logos/data-compare.svg'
+import logoAnimaginary from '@/images/logos/animaginary.svg'
+import logoCosmos from '@/images/logos/cosmos.svg'
+import logoHelioStream from '@/images/logos/helio-stream.svg'
+import logoOpenShuttle from '@/images/logos/open-shuttle.svg'
+import logoPlanetaria from '@/images/logos/planetaria.svg'
 
 /* -------------------------------------------------------------------------- */
 /*  Project data                                                              */
@@ -23,33 +24,30 @@ type Project = {
 
 const projects: Project[] = [
   {
-    name: 'Theoretical Background',
-    description:
-      'Theory',
-    logo: logoTheory,
-    tags: ['Theory'],
-  },  
-  
-  {
     name: 'Experimental Data',
     description:
-      'Experimental Data Here',
-    logo: logoExperiment,
+      'The source code for this website, built with Next.js and Tailwind CSS.',
+    logo: logoPlanetaria,
     tags: ['Data'],
   },
-
+  {
+    name: 'Theoretical Background',
+    description:
+      'High performance web animation library, hand-written in optimized WASM.',
+    logo: logoAnimaginary,
+    tags: ['Theory'],
+  },
   {
     name: 'Explanation of Results',
     description:
-      'Explain Results',
-    logo: logoResults,
+      'Real-time video streaming library, optimized for interstellar transmission.',
+    logo: logoHelioStream,
     tags: ['Analysis'],
   },
-
   {
     name: 'Comparison of Results',
-    description: 'Compare Results',
-    logo: logoCompare,
+    description: 'The operating system that powers our Planetaria space shuttles.',
+    logo: logoCosmos,
     tags: ['Analysis'],
   },
 ]
@@ -57,14 +55,7 @@ const projects: Project[] = [
 
 function normalizeTags(input?: string) {
   if (!input) return []
-  const parts = input.split(',').filter(Boolean).map(decodeURIComponent)
-
-  if (parts.length === 1) {
-    return [parts[0]]
-  } else if (parts.length === 2) {
-    return [parts[1]]
-  }
-  return []
+  return input.split(',').filter(Boolean).map(decodeURIComponent)
 }
 
 function hrefFor(tag: string, selected: string[]) {
@@ -121,7 +112,7 @@ export default async function Projects({
   const selected = normalizeTags((await searchParams).tags)
   const allTags = Array.from(
     new Set(projects.flatMap(p => p.tags ?? [])),
-  )
+  ).sort()
 
   const visible =
     selected.length === 0
@@ -158,7 +149,9 @@ export default async function Projects({
 
             {/* name */}
             <h2 className="mt-6 text-base font-semibold text-zinc-800 dark:text-zinc-100">
-              {project.name}
+              <Card.Link href={project.link.href} target="_blank" rel="noreferrer">
+                {project.name}
+              </Card.Link>
             </h2>
 
             {/* description */}
@@ -180,6 +173,12 @@ export default async function Projects({
                   ))}
               </div>
             )}
+
+            {/* footer link */}
+            <p className="relative z-10 mt-6 flex text-sm font-medium text-zinc-400 transition group-hover:text-blue-500 dark:text-zinc-200">
+              <LinkIcon className="h-6 w-6 flex-none" />
+              <span className="ml-2">{project.link.label}</span>
+            </p>
           </Card>
         ))}
       </ul>

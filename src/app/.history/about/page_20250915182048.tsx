@@ -94,11 +94,6 @@ export default function About() {
               sizes="(min-width: 1024px) 32rem, 20rem"
               className="aspect-square rounded-2xl bg-zinc-100 object-cover dark:bg-zinc-800"
             />
-            <div className="flex items-center justify-center mt-3">
-              <p className=" text-zinc-800 dark:text-zinc-400 text-center">
-                Photograph of Ion Exchanger Setup
-              </p>
-            </div>
           </div>
           <QuickNavChips />
         </div>
@@ -116,31 +111,29 @@ export default function About() {
           </h3>
           <div className="mt-6 space-y-7 text-base text-zinc-600 dark:text-zinc-300">
             <p>
-              We are investigating the effectiveness of Amberlyte resin to soften hard water by removing Ca<sup>2+</sup> ions from DI & tap water.
+              We are investigating the effectiveness of Amberlyte resin in water softening, specifically in removing Ca<sup>2+</sup> ions from DI & tap water.
               The fundamental theory is based on ion exchange, where Ca<sup>2+</sup> is exchanged for H+ ions and becomes stuck in the resin.
+              Include an illustration or clearly labeled and readably sized photo.
             </p>
             <p>
-              Evaluation is based on Ca<sup>2+</sup> concentration, measured in mg/L using a Ca<sup>2+</sup> selective electrode. 
-              The measurement range of the electrode is (1 to 40,000 mg/mL).
+              Description of the physical property measured by your experiment, 
+              including the measurement range (minimum and maximum as indicated on the datasheet).
             </p>
           </div>
         </div>
       </div>
 
       {/* Slideshow Section */}
-      <div id="slides" className="scroll-mt-28" />
-
-      <section className="scroll-mt-28 mt-16 rounded-xl bg-zinc-50 dark:bg-zinc-800/25 p-8 shadow-sm">
+      <section id="slides" className="scroll-mt-28 mt-16 rounded-xl bg-zinc-50 dark:bg-zinc-800/25 p-8 shadow-sm">
         <div className="lg:order-first lg:row-span-2">
-          <div className="aspect-video w-full">
-            <iframe
-              src="https://docs.google.com/presentation/d/e/2PACX-1vRYOnjq_GoEia2XC_dvWp6hgf108e1YnDhbxZ7c2xIIBR7XnB7zfbbVjIKwQizuW0SKoOM4WNiTPfKh/pubembed?start=false&loop=true&delayms=3000" 
-              width="960" 
-              height="569" 
-              allowFullScreen
-              className="border-0"
-            />
-            </div>
+          <iframe
+          src="https://docs.google.com/presentation/d/e/2PACX-1vRYOnjq_GoEia2XC_dvWp6hgf108e1YnDhbxZ7c2xIIBR7XnB7zfbbVjIKwQizuW0SKoOM4WNiTPfKh/pubembed?start=false&loop=true&delayms=3000" 
+          width="960" 
+          height="569" 
+          allowFullScreen
+          loading="lazy"
+          className="border-0"
+          />
         </div>
       </section>
 

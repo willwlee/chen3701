@@ -85,7 +85,7 @@ const googleDrive = [
     name: 'Scripts & Files',
     description:
       'Google Drive containing all scripts and data files.',
-    link: { href: 'https://drive.google.com/drive/folders/1Qh8462Os5es_1hNQ1_3GHLuknoWvxalG?usp=sharing', label: 'Go to Scripts & Files', hover: 'Visit Drive' },
+    link: { href: 'https://google.com', label: 'Go to Scripts & Files', hover: 'Visit Drive' },
     logo: logoDrive,
   },
 ]
