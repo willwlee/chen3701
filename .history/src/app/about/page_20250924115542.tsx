@@ -141,7 +141,7 @@ export default function About() {
             <iframe
               src="https://docs.google.com/presentation/d/e/2PACX-1vRYOnjq_GoEia2XC_dvWp6hgf108e1YnDhbxZ7c2xIIBR7XnB7zfbbVjIKwQizuW0SKoOM4WNiTPfKh/pubembed?start=false&loop=true&delayms=3000" 
               allowFullScreen
-              className="h-full w-full border-0"
+              className="border-0"
             />
             </div>
         </div>
