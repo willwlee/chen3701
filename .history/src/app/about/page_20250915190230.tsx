@@ -96,7 +96,7 @@ export default function About() {
             />
             <div className="flex items-center justify-center mt-3">
               <p className=" text-zinc-800 dark:text-zinc-400 text-center">
-                Photograph of Ion Exchanger Setup - Amberlite Resin in a Buret.
+                Photograph of Ion Exchanger Setup
               </p>
             </div>
           </div>
@@ -116,17 +116,12 @@ export default function About() {
           </h3>
           <div className="mt-6 space-y-7 text-base text-zinc-600 dark:text-zinc-300">
             <p>
-              We are investigating the effectiveness of Amberlite resin to soften hard water by removing Ca<sup>2+</sup> ions from DI & tap water.
+              We are investigating the effectiveness of Amberlyte resin to soften hard water by removing Ca<sup>2+</sup> ions from DI & tap water.
               The fundamental theory is based on ion exchange, where Ca<sup>2+</sup> is exchanged for H+ ions and becomes stuck in the resin.
             </p>
             <p>
               Evaluation is based on Ca<sup>2+</sup> concentration, measured in mg/L using a Ca<sup>2+</sup> selective electrode. 
               The measurement range of the electrode is (1 to 40,000 mg/mL).
-            </p>
-            <p>
-              Ion-exchange resins may be relevant to chemical engineers through the 
-              use of water softening in heat exchangers, where hard water can result in
-              mineral deposits that hinder heat transfer efficiency.
             </p>
           </div>
         </div>

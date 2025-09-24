@@ -96,7 +96,7 @@ export default function About() {
             />
             <div className="flex items-center justify-center mt-3">
               <p className=" text-zinc-800 dark:text-zinc-400 text-center">
-                Photograph of Ion Exchanger Setup - Amberlite Resin in a Buret.
+                Photograph of Ion Exchanger Setup - Amberlite Resin in a Buret
               </p>
             </div>
           </div>
