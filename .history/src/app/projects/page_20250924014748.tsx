@@ -12,7 +12,6 @@ import logoCompare from '@/images/logos/data-compare.svg'
 
 import tapdata from '@/images/tap-data.png'
 import didata from '@/images/di-data.png'
-import bardata from '@/images/bargraph.jpg'
 
 /* -------------------------------------------------------------------------- */
 /*  Project data                                                              */
@@ -133,13 +132,12 @@ const projects: Project[] = [
         
         <p>
           We collected data on the Ca²⁺ concentration (mg/L) and pH of Utah tap water before and after treatment with the ion exchange resin (Fig. 1).
-          It is relevant to point out the significant decrease of before and after concentrations of Ca²⁺ ions.
-
         </p>
+
         <figure className="my-6 text-center">
-          <Image src={bardata} alt="Calculated T-Test & Mean of Data" style={{ width: "50%", height: "auto" }} className="mx-auto" />
+          <Image src={tapdata} alt="Calculated T-Test & Mean of Data" className="mx-auto" />
           <figcaption className="mt-2 text-sm text-zinc-600 dark:text-zinc-400">
-            Figure 1. Graphical Representation of Tap Water Concentration Change
+            Figure 1. Calculated T-Test, Mean, & SD of Tap Water Data
           </figcaption>
         </figure>
 
@@ -150,23 +148,16 @@ const projects: Project[] = [
           The results of the t-test indicate a statistically significant change in both Ca2+ concentration and pH after ion exchange.<br /><br />
         </p>  
 
-        <figure className="my-6 text-center">
-          <Image src={tapdata} alt="Calculated T-Test & Mean of Data" style={{ width: "35%", height: "auto" }} className="mx-auto" />
-          <figcaption className="mt-2 text-sm text-zinc-600 dark:text-zinc-400">
-            Figure 2. Calculated T-Test, Mean, & SD of Tap Water Data
-          </figcaption>
-        </figure>
-
         <p>
           Furthermore, we have also determined the concentration of DI water before and after running it through the resin-exchange setup.
           As a baseline, the DI water measured 0.0 mg/L Ca²⁺ before and after treatment with the resin, wih a pH = 7.
-          These results are established as a control for the experiment (Fig. 3).
+          These results are established as a control for the experiment (Fig. 2).
         </p>
 
         <figure className="my-6 text-center">
-          <Image src={didata} alt="Calculated T-Test & Mean of Data" style={{ width: "20%", height: "auto" }} className="mx-auto" />
+          <Image src={didata} alt="Calculated T-Test & Mean of Data" className="mx-auto" />
           <figcaption className="mt-2 text-sm text-zinc-600 dark:text-zinc-400">
-            Figure 3. Calculated Mean, & SD of DI Water Data
+            Figure 2. Calculated Mean, & SD of DI Water Data
           </figcaption>
         </figure>
       </div>,
@@ -289,7 +280,7 @@ export default async function Projects({
   return (
     <SimpleLayout
       title="Data and Experiment"
-      intro="Experimental Data, Results, & References."
+      intro="Detailed description of the collected data, experiment and any simulations used."
       gapClass="mt-12 sm:mt-8"
     >
       {/* filter bar */}

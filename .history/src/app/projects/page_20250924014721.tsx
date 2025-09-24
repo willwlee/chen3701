@@ -12,7 +12,6 @@ import logoCompare from '@/images/logos/data-compare.svg'
 
 import tapdata from '@/images/tap-data.png'
 import didata from '@/images/di-data.png'
-import bardata from '@/images/bargraph.jpg'
 
 /* -------------------------------------------------------------------------- */
 /*  Project data                                                              */
@@ -77,7 +76,7 @@ const projects: Project[] = [
           where water hardness can exceed 500&nbsp;PPM in cities like Blanding [1].
           Proper identification and treatment of water hardness is essential to the
           function of chemical process equipment, such as heat exchangers and steam
-          generators [2]. <br/><br/>
+          generators [2].
         </p>
 
         <p className="indent-8">
@@ -88,7 +87,7 @@ const projects: Project[] = [
           are initially ionically bonded to Na⁺ ions, which are replaced by H⁺ ions
           after a charging process with HCl solution. Subsequently, when hard water is
           pushed through the resin, Ca²⁺ ions in the water are exchanged for H⁺ ions due
-          to charge similarity [4]. <br/><br/>
+          to charge similarity [4].
         </p>
 
         <p className="indent-8">
@@ -97,7 +96,7 @@ const projects: Project[] = [
           separately running DI &amp; tap water through an Amberlite resin setup and
           evaluating the change in Ca²⁺ concentration. To gauge its effectiveness, we
           measured concentrations using an ion-selective electrode and recorded pH
-          differences. <br/><br/>
+          differences.
         </p>
 
         <p className="indent-8">
@@ -107,7 +106,7 @@ const projects: Project[] = [
           be used by a chemical engineer who needs an accurate reading of water
           hardness, specifically the Ca²⁺ concentration. Determination of pH may be
           acquired from pH strips, useful for chemical engineers in many applications
-          including monitoring of progression along the chemical reaction coordinate. <br/><br/>
+          including monitoring of progression along the chemical reaction coordinate.
         </p>
 
         <p className="indent-8">
@@ -119,7 +118,7 @@ const projects: Project[] = [
           not produce any soap suds on the top of the surface. However, soft water
           doesn’t create soap scum and creates soap suds on the top of the water. The
           soap test can be used as an efficient method of determining the relative
-          hardness of water. <br/><br/>
+          hardness of water.
         </p>
       </div>,
     logo: logoTheory,
@@ -133,13 +132,12 @@ const projects: Project[] = [
         
         <p>
           We collected data on the Ca²⁺ concentration (mg/L) and pH of Utah tap water before and after treatment with the ion exchange resin (Fig. 1).
-          It is relevant to point out the significant decrease of before and after concentrations of Ca²⁺ ions.
-
         </p>
+
         <figure className="my-6 text-center">
-          <Image src={bardata} alt="Calculated T-Test & Mean of Data" style={{ width: "50%", height: "auto" }} className="mx-auto" />
+          <Image src={tapdata} alt="Calculated T-Test & Mean of Data" className="mx-auto" />
           <figcaption className="mt-2 text-sm text-zinc-600 dark:text-zinc-400">
-            Figure 1. Graphical Representation of Tap Water Concentration Change
+            Figure 1. Calculated T-Test, Mean, & SD of Tap Water Data
           </figcaption>
         </figure>
 
@@ -150,23 +148,16 @@ const projects: Project[] = [
           The results of the t-test indicate a statistically significant change in both Ca2+ concentration and pH after ion exchange.<br /><br />
         </p>  
 
-        <figure className="my-6 text-center">
-          <Image src={tapdata} alt="Calculated T-Test & Mean of Data" style={{ width: "35%", height: "auto" }} className="mx-auto" />
-          <figcaption className="mt-2 text-sm text-zinc-600 dark:text-zinc-400">
-            Figure 2. Calculated T-Test, Mean, & SD of Tap Water Data
-          </figcaption>
-        </figure>
-
         <p>
           Furthermore, we have also determined the concentration of DI water before and after running it through the resin-exchange setup.
           As a baseline, the DI water measured 0.0 mg/L Ca²⁺ before and after treatment with the resin, wih a pH = 7.
-          These results are established as a control for the experiment (Fig. 3).
+          These results are established as a control for the experiment (Fig. 2).
         </p>
 
         <figure className="my-6 text-center">
-          <Image src={didata} alt="Calculated T-Test & Mean of Data" style={{ width: "20%", height: "auto" }} className="mx-auto" />
+          <Image src={didata} alt="Calculated T-Test & Mean of Data" className="mx-auto" />
           <figcaption className="mt-2 text-sm text-zinc-600 dark:text-zinc-400">
-            Figure 3. Calculated Mean, & SD of DI Water Data
+            Figure 2. Calculated Mean, & SD of DI Water Data
           </figcaption>
         </figure>
       </div>,
@@ -289,7 +280,7 @@ export default async function Projects({
   return (
     <SimpleLayout
       title="Data and Experiment"
-      intro="Experimental Data, Results, & References."
+      intro="Detailed description of the collected data, experiment and any simulations used."
       gapClass="mt-12 sm:mt-8"
     >
       {/* filter bar */}

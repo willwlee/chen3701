@@ -185,7 +185,7 @@ function DesktopNavigation(props: React.ComponentPropsWithoutRef<'nav'>) {
       shadow-zinc-800/5 ring-1 ring-zinc-900/5 backdrop-blur dark:bg-zinc-800/90 
       dark:text-zinc-200 dark:ring-white/10">
         {/* <NavItem href="/">Home</NavItem> */}
-        <NavItem href="/about">Homepage</NavItem>
+        <NavItem href="/homepage">Homepage</NavItem>
         <NavItem href="/projects">Data/Experiments</NavItem>
         {/* <NavItem href="/speaking">Speaking</NavItem> */}
         <NavItem /* href="https://tadinada.medium.com/" */ href="/conclusions">Conclusions</NavItem>

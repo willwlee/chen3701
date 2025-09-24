@@ -12,7 +12,7 @@ function NavLink({
   return (
     <Link
       href={href}
-      className="transition hover:text-red-500 dark:hover:text-red-400"
+      className="transition hover:text-blue-500 dark:hover:text-blue-400"
     >
       {children}
     </Link>
@@ -30,11 +30,11 @@ export function Footer() {
                 <NavLink href="/about">Homepage</NavLink>
                 <NavLink href="/projects">Experiment</NavLink>
                 {/* <NavLink href="/speaking">Research</NavLink> */}
-                <NavLink href="/conclusions">Conclusions</NavLink> {/*Blog*/}
-                <NavLink href="/attachments">Attachments</NavLink> {/*Contact*/}
+                <NavLink href="/blog">Conclusions</NavLink>
+                <NavLink href="/contact">Attachments</NavLink>
               </div>
               <p className="text-sm text-zinc-400 dark:text-zinc-500">
-                <a href="mailto:williamwooseoklee@gmail.com" target='_blank' rel='noreferrer'>&copy; {new Date().getFullYear()} William Lee. All rights reserved.</a> 
+                <a href="mailto:sathya@tadinada.com" target='_blank' rel='noreferrer'>&copy; {new Date().getFullYear()} William Lee. All rights reserved.</a> 
               </p>
             </div>
           </ContainerInner>

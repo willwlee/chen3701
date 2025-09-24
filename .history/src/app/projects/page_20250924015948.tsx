@@ -133,13 +133,20 @@ const projects: Project[] = [
         
         <p>
           We collected data on the Ca²⁺ concentration (mg/L) and pH of Utah tap water before and after treatment with the ion exchange resin (Fig. 1).
-          It is relevant to point out the significant decrease of before and after concentrations of Ca²⁺ ions.
-
         </p>
+
         <figure className="my-6 text-center">
           <Image src={bardata} alt="Calculated T-Test & Mean of Data" style={{ width: "50%", height: "auto" }} className="mx-auto" />
           <figcaption className="mt-2 text-sm text-zinc-600 dark:text-zinc-400">
             Figure 1. Graphical Representation of Tap Water Concentration Change
+          </figcaption>
+        </figure>
+
+
+        <figure className="my-6 text-center">
+          <Image src={tapdata} alt="Calculated T-Test & Mean of Data" style={{ width: "50%", height: "auto" }} className="mx-auto" />
+          <figcaption className="mt-2 text-sm text-zinc-600 dark:text-zinc-400">
+            Figure 2. Calculated T-Test, Mean, & SD of Tap Water Data
           </figcaption>
         </figure>
 
@@ -149,13 +156,6 @@ const projects: Project[] = [
           A paired t-test with a 95% confidence was used to evaluate the efficacy of the ion exchange resin. 
           The results of the t-test indicate a statistically significant change in both Ca2+ concentration and pH after ion exchange.<br /><br />
         </p>  
-
-        <figure className="my-6 text-center">
-          <Image src={tapdata} alt="Calculated T-Test & Mean of Data" style={{ width: "35%", height: "auto" }} className="mx-auto" />
-          <figcaption className="mt-2 text-sm text-zinc-600 dark:text-zinc-400">
-            Figure 2. Calculated T-Test, Mean, & SD of Tap Water Data
-          </figcaption>
-        </figure>
 
         <p>
           Furthermore, we have also determined the concentration of DI water before and after running it through the resin-exchange setup.

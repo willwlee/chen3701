@@ -133,9 +133,8 @@ const projects: Project[] = [
         
         <p>
           We collected data on the Ca²⁺ concentration (mg/L) and pH of Utah tap water before and after treatment with the ion exchange resin (Fig. 1).
-          It is relevant to point out the significant decrease of before and after concentrations of Ca²⁺ ions.
-
         </p>
+
         <figure className="my-6 text-center">
           <Image src={bardata} alt="Calculated T-Test & Mean of Data" style={{ width: "50%", height: "auto" }} className="mx-auto" />
           <figcaption className="mt-2 text-sm text-zinc-600 dark:text-zinc-400">

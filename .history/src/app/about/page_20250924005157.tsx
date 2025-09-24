@@ -109,10 +109,10 @@ export default function About() {
             Thermodynamics of Ion Exchange
           </h1>
           <h3 className="mt-6 space-y-7 font-bold tracking-tight text-zinc-800 dark:text-zinc-400">
-            CH EN 3701 - William Lee, Jasmine Linares, Nathan Porter (9/25/24)
+            CH EN 3701 - William Lee, Jasmine Linares, Nathan Porter (Mon-8)
           </h3>
           <h3 className="font-bold tracking-tight text-zinc-800 dark:text-zinc-400">
-            Group: Mon-8
+            (9/25/24)
           </h3>
           <div className="mt-6 space-y-7 text-base text-zinc-600 dark:text-zinc-300">
             <p>

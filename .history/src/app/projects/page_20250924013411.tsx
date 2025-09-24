@@ -10,9 +10,8 @@ import logoExperiment from '@/images/logos/data-results.svg'
 import logoResults from '@/images/logos/data-experiment.svg'
 import logoCompare from '@/images/logos/data-compare.svg'
 
-import tapdata from '@/images/tap-data.png'
-import didata from '@/images/di-data.png'
-import bardata from '@/images/bargraph.jpg'
+import tapdata from '@/images/projects/tap-data.png'
+import didata from '@/images/projects/di-data.png'
 
 /* -------------------------------------------------------------------------- */
 /*  Project data                                                              */
@@ -69,59 +68,7 @@ const projects: Project[] = [
   {
     name: 'Theoretical Background',
     description:
-      <div className='text-zinc-800 dark:text-zinc-300'>
-        <p className="indent-8">
-          Water hardness, defined by the concentration of Ca²⁺ and Mg²⁺, is relevant to
-          residential and industrial processes, especially the accumulation of mineral
-          deposits blocking fluid pipelines. This is especially significant in Utah,
-          where water hardness can exceed 500&nbsp;PPM in cities like Blanding [1].
-          Proper identification and treatment of water hardness is essential to the
-          function of chemical process equipment, such as heat exchangers and steam
-          generators [2]. <br/><br/>
-        </p>
-
-        <p className="indent-8">
-          Ion exchange, proven to be an effective method in removing Ca²⁺, involves the
-          exchange of similarly charged ions via resin material. A particularly useful
-          ion exchange resin is Amberlite, a family of ion-exchange resins often
-          characterized by sulfonic acid groups (–SO₃H) [3]. The sulfonic acid groups
-          are initially ionically bonded to Na⁺ ions, which are replaced by H⁺ ions
-          after a charging process with HCl solution. Subsequently, when hard water is
-          pushed through the resin, Ca²⁺ ions in the water are exchanged for H⁺ ions due
-          to charge similarity [4]. <br/><br/>
-        </p>
-
-        <p className="indent-8">
-          This report investigates the effect of Amberlite-based ion exchange on Ca²⁺
-          removal in Utah tap water. The procedure of this experiment involves
-          separately running DI &amp; tap water through an Amberlite resin setup and
-          evaluating the change in Ca²⁺ concentration. To gauge its effectiveness, we
-          measured concentrations using an ion-selective electrode and recorded pH
-          differences. <br/><br/>
-        </p>
-
-        <p className="indent-8">
-          For our experiment, we measured both Ca²⁺ concentration with an ion selective
-          electrode (1.0 to 40,000&nbsp;mg/L) and pH using pH test strips (ranging from
-          0–14) before and after treating our water. The calcium-selective electrode may
-          be used by a chemical engineer who needs an accurate reading of water
-          hardness, specifically the Ca²⁺ concentration. Determination of pH may be
-          acquired from pH strips, useful for chemical engineers in many applications
-          including monitoring of progression along the chemical reaction coordinate. <br/><br/>
-        </p>
-
-        <p className="indent-8">
-          A qualitative test of water hardness is a soap test. Two equivalent functional
-          groups with an exchangeable ion (i.e. H⁺) react with one equivalent Ca²⁺ ion
-          to create an insoluble salt complex; this effectively removes Ca²⁺ from the
-          solution as the ion-exchanger is fixed. By putting soap into hard water the
-          soap bonds with the Ca²⁺ ions. This creates soap scum and consequently does
-          not produce any soap suds on the top of the surface. However, soft water
-          doesn’t create soap scum and creates soap suds on the top of the water. The
-          soap test can be used as an efficient method of determining the relative
-          hardness of water. <br/><br/>
-        </p>
-      </div>,
+      'Experimental Data Here',
     logo: logoTheory,
     tags: ['Theory'],
   },
@@ -130,45 +77,17 @@ const projects: Project[] = [
     name: 'Experimental Data',
     description:
       <div className='text-zinc-800 dark:text-zinc-300'>
-        
-        <p>
-          We collected data on the Ca²⁺ concentration (mg/L) and pH of Utah tap water before and after treatment with the ion exchange resin (Fig. 1).
-          It is relevant to point out the significant decrease of before and after concentrations of Ca²⁺ ions.
-
-        </p>
-        <figure className="my-6 text-center">
-          <Image src={bardata} alt="Calculated T-Test & Mean of Data" style={{ width: "50%", height: "auto" }} className="mx-auto" />
-          <figcaption className="mt-2 text-sm text-zinc-600 dark:text-zinc-400">
-            Figure 1. Graphical Representation of Tap Water Concentration Change
-          </figcaption>
-        </figure>
-
+        <Image src={tapdata} alt="Calculated T-Test & Mean of Data" />
         <p>
           <br />The ion exchange resin reduced the Ca²⁺ concentration by an average change of -59 (± 13.84) mg/L. 
           Furthermore, the resin decreased pH by an average change of -3.83 (± 0.29) mg/L.<br /><br />   
           A paired t-test with a 95% confidence was used to evaluate the efficacy of the ion exchange resin. 
           The results of the t-test indicate a statistically significant change in both Ca2+ concentration and pH after ion exchange.<br /><br />
         </p>  
-
-        <figure className="my-6 text-center">
-          <Image src={tapdata} alt="Calculated T-Test & Mean of Data" style={{ width: "35%", height: "auto" }} className="mx-auto" />
-          <figcaption className="mt-2 text-sm text-zinc-600 dark:text-zinc-400">
-            Figure 2. Calculated T-Test, Mean, & SD of Tap Water Data
-          </figcaption>
-        </figure>
-
+        <Image src="@/images/di-data.png" alt="Calculated T-Test & Mean of Data" />
         <p>
-          Furthermore, we have also determined the concentration of DI water before and after running it through the resin-exchange setup.
-          As a baseline, the DI water measured 0.0 mg/L Ca²⁺ before and after treatment with the resin, wih a pH = 7.
-          These results are established as a control for the experiment (Fig. 3).
+          As a baseline, the DI water measured 0.0 mg/L Ca²⁺ before and after treatment with the resin, wih a pH = 7.0.
         </p>
-
-        <figure className="my-6 text-center">
-          <Image src={didata} alt="Calculated T-Test & Mean of Data" style={{ width: "20%", height: "auto" }} className="mx-auto" />
-          <figcaption className="mt-2 text-sm text-zinc-600 dark:text-zinc-400">
-            Figure 3. Calculated Mean, & SD of DI Water Data
-          </figcaption>
-        </figure>
       </div>,
     logo: logoExperiment,
     tags: ['Data'],
@@ -202,13 +121,6 @@ const projects: Project[] = [
     description: 'Compare Results',
     logo: logoCompare,
     tags: ['Analysis'],
-  },
-
-    {
-    name: 'References',
-    description: 'Compare Results',
-    logo: logoResults,
-    tags: ['Theory', 'Analysis'],
   },
 ]
 
@@ -289,7 +201,7 @@ export default async function Projects({
   return (
     <SimpleLayout
       title="Data and Experiment"
-      intro="Experimental Data, Results, & References."
+      intro="Detailed description of the collected data, experiment and any simulations used."
       gapClass="mt-12 sm:mt-8"
     >
       {/* filter bar */}

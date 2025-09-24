@@ -133,7 +133,7 @@ function MobileNavigation(
             <nav className="mt-6">
               <ul className="-my-2 divide-y 
               divide-zinc-100 text-base text-zinc-800 dark:divide-zinc-100/5 dark:text-zinc-300">
-                <MobileNavItem href="/homepage">Homepage</MobileNavItem>
+                <MobileNavItem href="/about">Homepage</MobileNavItem>
                 <MobileNavItem href="/projects">Data/Experiments</MobileNavItem>
                 <MobileNavItem href="/conclusions">Conclusions</MobileNavItem> {/*Blog*/}
                 {/* <MobileNavItem href="/speaking">Speaking</MobileNavItem> */}
