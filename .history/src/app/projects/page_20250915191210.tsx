@@ -16,73 +16,24 @@ import logoCompare from '@/images/logos/data-compare.svg'
 
 type Project = {
   name: string
-  description: React.ReactNode
+  description: string
   logo: any
   tags: string[]
 }
 
 const projects: Project[] = [
   {
-    name: 'Experimental Procedure',
-    description:
-    <div className='text-zinc-800 dark:text-zinc-300'>
-      <p>
-        To quantify the effectiveness of the ion exchange resin,
-        we conducted an experiment measuring the Ca²⁺ concentration and pH of
-        tap water and DI water before and after passing through a charged ion
-        exchange resin.<br /><br />
-      </p>
-        <li>
-          1. Pour EWS ion exchange resin product into a buret. Charge it by submerging
-          resin in 3M HCl for ~20 minutes.
-        </li>
-        <li>
-          2. Once sufficiently charged, drain out HCl and dispose in a hazardous waste
-          container. Rinse with DI water 1–2 times.
-        </li>
-        <li>
-          3. Calibrate Ca²⁺ probe using calibrated standards of 100 mg/L Ca²⁺ and 1000
-          mg/L Ca²⁺.
-        </li>
-        <li>
-          4. Measure 100 mL of tap water in a beaker. Record Ca²⁺ concentration and pH
-          using probe and pH test strips.
-        </li>
-        <li>
-          5. Flush the tap water through the buret, allowing the water to completely
-          exit before measuring Ca²⁺ and pH again.
-        </li>
-        <li>
-          6. Repeat Steps 3–5 twice more with tap water (for 3 total trial runs).
-        </li>
-        <li>7. Repeat the experiment 3 times with DI water.</li>
-        </div>,
-    logo: logoExperiment,
-    tags: ['Experiment'],
-  },  
-  
-  
-  {
     name: 'Theoretical Background',
     description:
-      'Experimental Data Here',
+      'Theory',
     logo: logoTheory,
     tags: ['Theory'],
-  },
-
+  },  
+  
   {
     name: 'Experimental Data',
     description:
-      <div className='text-zinc-800 dark:text-zinc-300'>
-        <img src="t-test.png" alt="Calculated T-Test & Mean of Data" />
-        <p>
-          <br />The ion exchange resin reduced the Ca²⁺ concentration by an average change of -59 (± 13.84) mg/L. 
-          Furthermore, the resin decreased pH by an average change of -3.83 (± 0.29) mg/L.<br /><br />   
-          A paired t-test with a 95% confidence was used to evaluate the efficacy of the ion exchange resin. 
-          The results of the t-test indicate a statistically significant change in both Ca2+ concentration and pH after ion exchange.<br /><br />
-          As a baseline, the DI water measured 0.0 mg/L Ca²⁺ before and after treatment with the resin, wih a pH = 7.0.
-        </p>
-      </div>,
+      'Experimental Data Here',
     logo: logoExperiment,
     tags: ['Data'],
   },
@@ -90,22 +41,7 @@ const projects: Project[] = [
   {
     name: 'Explanation of Results',
     description:
-      <div className='text-zinc-800 dark:text-zinc-300'>
-        <p>
-          The ion exchange resin effectively reduced the Ca²⁺ concentration in Utah tap water, demonstrating its success in softening hard water.
-          This is indicated by the statistically significant decrease in Ca²⁺ concentration after treatment with the resin.
-          
-          The lack of Ca²⁺ change in DI water is expected, and indicates that the resin does not add Ca²⁺ ions.
-          Furthermore, since the Ca²⁺ concentrations of DI are exactly 0.0 mg/L, we can conclude the Ca²⁺ selective electrode
-          is calibrated correctly and functioning properly. Similar can be said for the pH probe, since the measured pH of DI water is
-          very similar to the expected value of 7.0. <br/><br/>
-
-          The decrease in pH after treatment with the resin is consistent with the ion exchange mechanism, where Ca²⁺ ions are exchanged
-          for H⁺ ions. The release of H⁺ ions into the tap water results in increased acidity (and consequently, a lower pH). This further supports
-          the conclusion that the resin is effective in water softening by removal of Ca²⁺ ions from the water.<br/><br/>
-
-        </p>
-      </div>,
+      'Explain Results',
     logo: logoResults,
     tags: ['Analysis'],
   },

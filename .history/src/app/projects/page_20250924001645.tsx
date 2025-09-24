@@ -25,7 +25,7 @@ const projects: Project[] = [
   {
     name: 'Experimental Procedure',
     description:
-    <div className='text-zinc-800 dark:text-zinc-300'>
+    <div className='text-zinc-800 dark:text-zinc-200'>
       <p>
         To quantify the effectiveness of the ion exchange resin,
         we conducted an experiment measuring the Ca²⁺ concentration and pH of
@@ -73,14 +73,13 @@ const projects: Project[] = [
   {
     name: 'Experimental Data',
     description:
-      <div className='text-zinc-800 dark:text-zinc-300'>
+      <div className='text-zinc-800 dark:text-zinc-200'>
         <img src="t-test.png" alt="Calculated T-Test & Mean of Data" />
         <p>
-          <br />The ion exchange resin reduced the Ca²⁺ concentration by an average change of -59 (± 13.84) mg/L. 
+          <br />The ion exchange resin reduced the Ca2+ concentration by an average change of -59 (± 13.84) mg/L. 
           Furthermore, the resin decreased pH by an average change of -3.83 (± 0.29) mg/L.<br /><br />   
           A paired t-test with a 95% confidence was used to evaluate the efficacy of the ion exchange resin. 
-          The results of the t-test indicate a statistically significant change in both Ca2+ concentration and pH after ion exchange.<br /><br />
-          As a baseline, the DI water measured 0.0 mg/L Ca²⁺ before and after treatment with the resin, wih a pH = 7.0.
+          The results of the t-test indicate a statistically significant change in both Ca2+ concentration and pH after ion exchange. 
         </p>
       </div>,
     logo: logoExperiment,
@@ -90,7 +89,7 @@ const projects: Project[] = [
   {
     name: 'Explanation of Results',
     description:
-      <div className='text-zinc-800 dark:text-zinc-300'>
+      <div className='text-zinc-800 dark:text-zinc-200'>
         <p>
           The ion exchange resin effectively reduced the Ca²⁺ concentration in Utah tap water, demonstrating its success in softening hard water.
           This is indicated by the statistically significant decrease in Ca²⁺ concentration after treatment with the resin.

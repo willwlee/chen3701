@@ -76,11 +76,10 @@ const projects: Project[] = [
       <div className='text-zinc-800 dark:text-zinc-300'>
         <img src="t-test.png" alt="Calculated T-Test & Mean of Data" />
         <p>
-          <br />The ion exchange resin reduced the Ca²⁺ concentration by an average change of -59 (± 13.84) mg/L. 
+          <br />The ion exchange resin reduced the Ca2+ concentration by an average change of -59 (± 13.84) mg/L. 
           Furthermore, the resin decreased pH by an average change of -3.83 (± 0.29) mg/L.<br /><br />   
           A paired t-test with a 95% confidence was used to evaluate the efficacy of the ion exchange resin. 
-          The results of the t-test indicate a statistically significant change in both Ca2+ concentration and pH after ion exchange.<br /><br />
-          As a baseline, the DI water measured 0.0 mg/L Ca²⁺ before and after treatment with the resin, wih a pH = 7.0.
+          The results of the t-test indicate a statistically significant change in both Ca2+ concentration and pH after ion exchange. 
         </p>
       </div>,
     logo: logoExperiment,

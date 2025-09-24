@@ -12,7 +12,7 @@ export const metadata: Metadata = {
       'Mon-8 CH EN 3701',
   },
   description:
-    'CH EN 3701, Mon-8.',
+    'I’m Sathya Tadinada, a software developer and college student based in Salt Lake City. I’m excited to grow my skills in the tech field and make a positive impact through my work.',
   alternates: {
     types: {
       'application/rss+xml': `${process.env.NEXT_PUBLIC_SITE_URL}/feed.xml`,

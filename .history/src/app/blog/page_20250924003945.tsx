@@ -2,6 +2,10 @@ import { type Metadata } from 'next'
 import Image from 'next/image'
 
 import { Container } from '@/components/Container'
+import portraitImage from '@/images/home-illustration.jpg'
+import portraitImage1 from '@/images/will.png'
+import portraitImage2 from '@/images/default-icon.jpg'
+import portraitImage3 from '@/images/default-icon.jpg'
 
 import {
   UserIcon
@@ -37,7 +41,7 @@ function QuickNavChips() {
 
   return (
     <div className="mt-6">
-      <p className="text-xs uppercase tracking-wide text-zinc-300 dark:text-zinc-400">
+      <p className="text-xs uppercase tracking-wide text-zinc-500 dark:text-zinc-400">
         Jump to
       </p>
       <ul className="mt-2 flex flex-wrap gap-3">
@@ -87,7 +91,7 @@ export default function Blog() {
           <h1 className="text-4xl font-bold tracking-tight text-zinc-800 sm:text-5xl dark:text-zinc-100">
             Conclusions
           </h1>
-          <div className="mt-6 space-y-7 text-base text-zinc-600 dark:text-zinc-100">
+          <div className="mt-6 space-y-7 text-base text-zinc-600 dark:text-zinc-300">
             <p>
              Our experiment is effective in determining the sufficiency of ion-exchange resin mechanisms. 
              Compared to the readings for tap water where Ca²⁺ was present before treatment, the levels of Ca²⁺ after treatment were reduced by 98.8%-100%. 
@@ -130,11 +134,7 @@ export default function Blog() {
         </div>
         <div>
           <p>
-            Future experiments could include testing and comparison of different resins to
-            determine a quantifiable measure of effectiveness, such as some form of
-            ion-exchange rate constant. Additionally, further exploration of its efficacy
-            in removing Mg²⁺ ions and determining theories from differences could be valuable.
-            Regardless, this experiment is sufficient in providing a learning experience in ion-exchange mechanisms.
+            Any suggestions on how to improve any problematic aspects of the experiment, equipment, etc.
           </p>
         </div>
       </section>
