@@ -118,8 +118,7 @@ export default function Blog() {
         </div>
         <div>
           <p>
-            We were recommended by the boss to charge the resin with HCl and let it sit for some time to fully charge the resin.
-            Additionally, we were recommended to recharge periodically.
+            Recommendations as requested by your boss.
           </p>
         </div>
       </section>

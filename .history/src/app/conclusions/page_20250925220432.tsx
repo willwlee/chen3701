@@ -104,7 +104,7 @@ export default function Blog() {
         </div>
         <div>
           <p>
-            References of similar experiments with comparisons <br/>
+            References of similar experiments with comparisons <br/
             Cetin, G. (2014). Removal of hardness of earth alkaline metals from aqueous solutions by ion exchange method. 
             ISRN Analytical Chemistry, 2014, Article ID 621794. https://doi.org/10.1155/2014/621794
           </p>
@@ -118,8 +118,7 @@ export default function Blog() {
         </div>
         <div>
           <p>
-            We were recommended by the boss to charge the resin with HCl and let it sit for some time to fully charge the resin.
-            Additionally, we were recommended to recharge periodically.
+            Recommendations as requested by your boss.
           </p>
         </div>
       </section>

@@ -204,7 +204,7 @@ const projects: Project[] = [
       <p>
       In comparison with the results of a similar experiment in the article: “Removal of Hardness of Earth Alkaline Metals from Aqueous Solutions by Ion Exchange Method” by Gulten Cetin, the effectiveness of EWS’s ion exchange resin was very high. 
       The experiment, detailed in the article previously mentioned, was comparing the effectiveness of the resin removing both Magnesium and Calcium over time with varying conditions. 
-      The range of Calcium under varying conditions was 53.6%-100%, whereas EWS’s ion exchange resin’s range of effectiveness was 98.8%-100% [2].
+      The range of Calcium under varying conditions was 53.6%-100%, whereas EWS’s ion exchange resin’s range of effectiveness was 98.8%-100% [1].
       </p>
     </div>,
     logo: logoCompare,
