@@ -2,11 +2,10 @@ import { type Metadata } from 'next'
 import Image from 'next/image'
 
 import { Container } from '@/components/Container'
-import buretsetup from '@/images/home-illustration.jpg'
+import portraitImage from '@/images/home-illustration.jpg'
 import portraitImage1 from '@/images/will.png'
-import portraitImage3 from '@/images/nathan.jpg'
-import portraitImage2 from '@/images/jasmine.jpg'
-import watersetup from '@/images/watersetup.jpg'
+import portraitImage2 from '@/images/default-icon.jpg'
+import portraitImage3 from '@/images/default-icon.jpg'
 
 import {
   UserIcon
@@ -90,34 +89,19 @@ export default function About() {
         <div className="lg:pl-20">
           <div className="max-w-xs px-2.5 lg:max-w-none">
             <Image
-              src={buretsetup}
+              src={portraitImage}
               alt="Picture of Illustration"
               sizes="(min-width: 1024px) 32rem, 20rem"
               className="aspect-square rounded-2xl bg-zinc-100 object-cover dark:bg-zinc-800"
             />
             <div className="flex items-center justify-center mt-3">
               <p className=" text-zinc-800 dark:text-zinc-400 text-center">
-                Photograph of Ion Exchanger Setup - EWS Resin in a buret. <br></br><br></br>
-              </p>
-            <div></div>
-            </div>
-            <div className="max-w-xs px-2.5 lg:max-w-none">
-            <Image
-              src={watersetup}
-              alt="Picture of Illustration"
-              sizes="(min-width: 1024px) 32rem  , 20rem"
-              className="aspect-square rounded-2xl bg-zinc-100 object-cover dark:bg-zinc-800"
-            />
-            <div className="flex items-center justify-center mt-3">
-              <p className=" text-zinc-800 dark:text-zinc-400 text-center">
-                Illustration of Ion Exchanger Setup
+                Photograph of Ion Exchanger Setup - EWS Resin in a buret.
               </p>
             </div>
-          </div>
           </div>
           <QuickNavChips />
         </div>
-        
 
         {/* Intro */}
         <div className="lg:order-first lg:row-span-2">
@@ -132,8 +116,8 @@ export default function About() {
           </h3>
           <div className="mt-6 space-y-7 text-base text-zinc-600 dark:text-zinc-300">
             <p>
-              We are investigating the effectiveness of Europa Water Service (EWS) resin to soften hard water by removing calcium (Ca<sup>2+</sup>) ions from distilled (DI) and tap water.
-              The fundamental theory is based on ion exchange, where Ca<sup>2+</sup> is exchanged for hydrogen (H<sup>+</sup>) ions and becomes stuck in the resin.
+              We are investigating the effectiveness of EWS resin to soften hard water by removing Ca<sup>2+</sup> ions from DI & tap water.
+              The fundamental theory is based on ion exchange, where Ca<sup>2+</sup> is exchanged for H<sup>+</sup> ions and becomes stuck in the resin.
             </p>
             <p>
               Evaluation is based on Ca<sup>2+</sup> concentration, measured in mg/L using a Ca<sup>2+</sup> selective electrode. 
@@ -142,11 +126,7 @@ export default function About() {
             <p>
               Ion-exchange resins may be relevant to chemical engineers through the 
               use of water softening in heat exchangers, where hard water can result in
-              mineral deposits that hinder heat transfer efficiency. Aside from Ca<sup>2+</sup> ions, ion-exchange resins can remove similarly-charged ions, such as Mg<sup>2+</sup>.
-            </p>
-            <p>
-              Furthermore, the unique properties of ion-exchange resins serve useful in lanthanide extraction processes, where the extraction of lanthanide ions from rare earth solutions is 
-              essential for semiconductor manufacturing and MRI contrast agents.
+              mineral deposits that hinder heat transfer efficiency.
             </p>
           </div>
         </div>
@@ -183,6 +163,9 @@ export default function About() {
             />
             <h3 className="mt-4 text-lg font-medium text-zinc-800 dark:text-zinc-100">William Lee</h3>
             <p className="mt-1 text-zinc-600 dark:text-zinc-400">will.lee@utah.edu</p>
+            <p className="mt-2 text-sm text-zinc-600 dark:text-zinc-400">
+              Brief bio or description of the member&apos;s contributions to the project.
+            </p>
           </div>
 
           {/* Member 2 */}
@@ -193,7 +176,10 @@ export default function About() {
               className="h-32 w-32 rounded-full object-cover"
             />
             <h3 className="mt-4 text-lg font-medium text-zinc-800 dark:text-zinc-100">Jasmine Linares</h3>
-            <p className="mt-1 text-zinc-600 dark:text-zinc-400">jasmine.linares@utah.edu</p>
+            <p className="mt-1 text-zinc-600 dark:text-zinc-400">Role/Title</p>
+            <p className="mt-2 text-sm text-zinc-600 dark:text-zinc-400">
+              Brief bio or description of the member&apos;s contributions to the project.
+            </p>
           </div>
 
           {/* Member 3 */}
@@ -204,7 +190,10 @@ export default function About() {
               className="h-32 w-32 rounded-full object-cover"
             />
             <h3 className="mt-4 text-lg font-medium text-zinc-800 dark:text-zinc-100">Nathan Porter</h3>
-            <p className="mt-1 text-zinc-600 dark:text-zinc-400">nathan.porter@utah.edu</p>
+            <p className="mt-1 text-zinc-600 dark:text-zinc-400">Role/Title</p>
+            <p className="mt-2 text-sm text-zinc-600 dark:text-zinc-400">
+              Brief bio or description of the member&apos;s contributions to the project. 
+            </p>
           </div> 
         </div>
       </section>

@@ -61,7 +61,7 @@ const projects: Project[] = [
     name: 'Theoretical Background',
     description: (
       <div className="space-y-2">
-        <p>
+        <p className="indent-8">
           Water hardness, defined by Ca²⁺ and Mg²⁺ content, causes mineral deposits that
           block pipelines and reduce heat-exchanger efficiency. In Utah, hardness can
           exceed 500 PPM in some cities [1].
@@ -90,7 +90,7 @@ const projects: Project[] = [
         </p>
 
         <figure className="text-center">
-          <Image src={bardata} alt="Tap-water Ca data" width={300} className="mx-auto rounded-xl" />
+          <Image src={bardata} alt="Tap-water Ca data" width={480} className="mx-auto rounded-xl" />
           <figcaption className="mt-2 text-sm text-zinc-600 dark:text-zinc-400">
             Figure 1. Tap-water Ca²⁺ concentration change.
           </figcaption>
@@ -166,7 +166,7 @@ const projects: Project[] = [
           [1] EDRO Corporation, “Water Hardness,” EDRO Corporation News, Sep. 25, 2025. [Online]. Available: https://edrocorp.com/141104news.html
         </p>
         <p>
-          [2] G. Cetin, “Removal of hardness of earth alkaline metals from aqueous solutions by ion exchange method,” ISRN Analytical Chemistry, vol. 2014, Art. ID 146046, PDF pp. 4-6, 2014. [Online]. Available: https://doi.org/10.1155/2014/146046
+          [2] G. Cetin, “Removal of hardness of earth alkaline metals from aqueous solutions by ion exchange method,” ISRN Analytical Chemistry, vol. 2014, Article ID 146046, 2014. [Online]. Available: https://doi.org/10.1155/2014/621794
         </p>
       </div>
     ),

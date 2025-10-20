@@ -61,7 +61,7 @@ const projects: Project[] = [
     name: 'Theoretical Background',
     description: (
       <div className="space-y-2">
-        <p>
+        <p className="indent-8">
           Water hardness, defined by Ca²⁺ and Mg²⁺ content, causes mineral deposits that
           block pipelines and reduce heat-exchanger efficiency. In Utah, hardness can
           exceed 500 PPM in some cities [1].
@@ -84,13 +84,13 @@ const projects: Project[] = [
       <div className="space-y-2">
         <p>
           From experimental methods, we measured Ca²⁺ concentration (mg/L) of Utah water before and after EWS resin treatment as an indicator of water softening efficacy.
-          These measurements occurred 3 times each for Utah tap water and distilled (DI) water (Fig. 1). Regarding tap water, initial Ca²⁺ concentrations ranged from ~46-50 mg/L, 
-          consistent with the expected range of Salt Lake City water hardness measurements. Post-treatment Ca²⁺ levels dropped to nearly 0 mg/L by a significant amount -- likely surpassing
-          the limit of detection (LOD) of the ion-selective electrode. Despite this, the significant change in concentration suggests effective Ca²⁺ removal by the EWS resin.
+          These measurements occurred 3 times each for Utah tap water and distilled (DI) water. Regarding tap water, initial Ca²⁺ concentrations ranged from ~46-50 mg/L, 
+          consistent with the expected range of Salt Lake City water hardness measurements. Post-treatment Ca²⁺ levels dropped to nearly 0 mg/L by a significant amount -- likely 
+          indicating ion removal by EWS resin (Fig. 1).
         </p>
 
         <figure className="text-center">
-          <Image src={bardata} alt="Tap-water Ca data" width={300} className="mx-auto rounded-xl" />
+          <Image src={bardata} alt="Tap-water Ca data" width={480} className="mx-auto rounded-xl" />
           <figcaption className="mt-2 text-sm text-zinc-600 dark:text-zinc-400">
             Figure 1. Tap-water Ca²⁺ concentration change.
           </figcaption>
@@ -114,7 +114,7 @@ const projects: Project[] = [
         <p>
           DI water (0 mg/L Ca²⁺, pH ≈ 6-7) showed no change after treatment (Fig. 3). The lack of H<sup>+</sup> ion increase indicates that the resin did not release H<sup>+</sup> ions into DI water, 
           as there were no Ca²⁺ ions to exchange. This contrasts with tap water results, because the Ca<sup>2+</sup> ions in tap water were exchanged for H<sup>+</sup> ions from the resin, leading to a pH drop.
-          Thus, this methodology effectively demonstrates the Ca<sup>2+</sup> ion removal is inherently due to the ion-exchange mechanism of the EWS resin.
+          Thus, this methodology effectively demonstrates the Ca<sup>2+</sup> ion removal is inherently due to ion-exchange mechanism of the EWS resin.
         </p>
 
         <figure className="text-center">
@@ -129,14 +129,12 @@ const projects: Project[] = [
   },
 
   {
-    name: 'Analysis & Explanation of Results',
+    name: 'Explanation of Results',
     description: (
       <div className="space-y-2">
         <p>
-          In summary, we have demonstrated that the EWS resin is particularly effective at removing Ca²⁺ ions from hard tap water (by removing 59 ± 13.8 mg/L), as evidenced by a statistically significant drop
-          in ion concentration after treatment. The measurement of the pH further supports the ion-exchange mechanism, where Ca²⁺ ions are replaced by H⁺ ions from the resin. Furthermore,
-          distilled water showed no significant change in pH due to the absence of Ca²⁺ ions to exchange, validating our experimental approach. It may be important to note the potential
-          limit in detection (LOD) of the Ca²⁺ ion-selective electrode, which may affect the accuracy of very low concentration measurements post-treatment. 
+          The resin significantly softened tap water by removing Ca²⁺. No change in DI water validates
+          probe calibration. The observed pH drop matches the reaction Ca²⁺ ↔ 2 H⁺, indicating proper ion exchange.
         </p>
       </div>
     ),
@@ -149,8 +147,8 @@ const projects: Project[] = [
       <div className="space-y-2">
         <p>
           In the experimental setup produced by this report, the ion-exchange of EWS resin resulted in 98.8–100 % Ca²⁺ removal. Comparatively, Cetin (2014) 
-          yielded similar Ca²⁺ removal, at ~100 % [2]. In summary, the EWS resin performs nearly as well the resin
-          used in Cetin's water-softening trials, and its high removal rate indicates it is still a viable product to use for industry.
+          yielded significantly less Ca²⁺ removal, at only 53.6–100 % under similar conditions [2]. In summary, the EWS resin significantly outperforms the resin
+          used in Cetin's water-softening trials and indicates it is a suitable product to use for industry.
 
         </p>
       </div>
@@ -163,10 +161,18 @@ const projects: Project[] = [
     description: (
       <div className="space-y-2">
         <p>
-          [1] EDRO Corporation, “Water Hardness,” EDRO Corporation News, Sep. 25, 2025. [Online]. Available: https://edrocorp.com/141104news.html
+          [1] EDRO Corporation, “Water hardness.” Sep 25 2025. 
+          <a
+            href="https://edrocorp.com/141104news.html"
+            target="_blank"
+            className="text-blue-500 hover:underline"
+          >
+            edrocorp.com/141104news.html
+          </a>
         </p>
         <p>
-          [2] G. Cetin, “Removal of hardness of earth alkaline metals from aqueous solutions by ion exchange method,” ISRN Analytical Chemistry, vol. 2014, Art. ID 146046, PDF pp. 4-6, 2014. [Online]. Available: https://doi.org/10.1155/2014/146046
+          [2] G. Cetin, “Removal of hardness of earth alkaline metals from aqueous solutions by ion exchange method,” 
+          <i>ISRN Analytical Chemistry</i>, 2014.
         </p>
       </div>
     ),

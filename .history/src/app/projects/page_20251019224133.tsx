@@ -90,7 +90,7 @@ const projects: Project[] = [
         </p>
 
         <figure className="text-center">
-          <Image src={bardata} alt="Tap-water Ca data" width={300} className="mx-auto rounded-xl" />
+          <Image src={bardata} alt="Tap-water Ca data" width={480} className="mx-auto rounded-xl" />
           <figcaption className="mt-2 text-sm text-zinc-600 dark:text-zinc-400">
             Figure 1. Tap-water Ca²⁺ concentration change.
           </figcaption>

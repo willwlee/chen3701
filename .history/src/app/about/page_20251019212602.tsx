@@ -4,8 +4,8 @@ import Image from 'next/image'
 import { Container } from '@/components/Container'
 import buretsetup from '@/images/home-illustration.jpg'
 import portraitImage1 from '@/images/will.png'
-import portraitImage3 from '@/images/nathan.jpg'
-import portraitImage2 from '@/images/jasmine.jpg'
+import portraitImage2 from '@/images/nathan.jpg'
+import portraitImage3 from '@/images/jasmine.heic'
 import watersetup from '@/images/watersetup.jpg'
 
 import {
@@ -193,7 +193,7 @@ export default function About() {
               className="h-32 w-32 rounded-full object-cover"
             />
             <h3 className="mt-4 text-lg font-medium text-zinc-800 dark:text-zinc-100">Jasmine Linares</h3>
-            <p className="mt-1 text-zinc-600 dark:text-zinc-400">jasmine.linares@utah.edu</p>
+            <p className="mt-1 text-zinc-600 dark:text-zinc-400">Role/Title</p>
           </div>
 
           {/* Member 3 */}
@@ -204,7 +204,7 @@ export default function About() {
               className="h-32 w-32 rounded-full object-cover"
             />
             <h3 className="mt-4 text-lg font-medium text-zinc-800 dark:text-zinc-100">Nathan Porter</h3>
-            <p className="mt-1 text-zinc-600 dark:text-zinc-400">nathan.porter@utah.edu</p>
+            <p className="mt-1 text-zinc-600 dark:text-zinc-400">Role/Title</p>
           </div> 
         </div>
       </section>

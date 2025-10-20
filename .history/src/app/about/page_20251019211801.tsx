@@ -2,10 +2,10 @@ import { type Metadata } from 'next'
 import Image from 'next/image'
 
 import { Container } from '@/components/Container'
-import buretsetup from '@/images/home-illustration.jpg'
+import portraitImage from '@/images/home-illustration.jpg'
 import portraitImage1 from '@/images/will.png'
-import portraitImage3 from '@/images/nathan.jpg'
-import portraitImage2 from '@/images/jasmine.jpg'
+import portraitImage2 from '@/images/default-icon.jpg'
+import portraitImage3 from '@/images/default-icon.jpg'
 import watersetup from '@/images/watersetup.jpg'
 
 import {
@@ -90,16 +90,15 @@ export default function About() {
         <div className="lg:pl-20">
           <div className="max-w-xs px-2.5 lg:max-w-none">
             <Image
-              src={buretsetup}
+              src={portraitImage}
               alt="Picture of Illustration"
               sizes="(min-width: 1024px) 32rem, 20rem"
               className="aspect-square rounded-2xl bg-zinc-100 object-cover dark:bg-zinc-800"
             />
             <div className="flex items-center justify-center mt-3">
               <p className=" text-zinc-800 dark:text-zinc-400 text-center">
-                Photograph of Ion Exchanger Setup - EWS Resin in a buret. <br></br><br></br>
+                Photograph of Ion Exchanger Setup - EWS Resin in a buret.
               </p>
-            <div></div>
             </div>
             <div className="max-w-xs px-2.5 lg:max-w-none">
             <Image
@@ -108,7 +107,7 @@ export default function About() {
               sizes="(min-width: 1024px) 32rem  , 20rem"
               className="aspect-square rounded-2xl bg-zinc-100 object-cover dark:bg-zinc-800"
             />
-            <div className="flex items-center justify-center mt-3">
+            <div className="flex items-center justify-center mt-8">
               <p className=" text-zinc-800 dark:text-zinc-400 text-center">
                 Illustration of Ion Exchanger Setup
               </p>
@@ -193,7 +192,7 @@ export default function About() {
               className="h-32 w-32 rounded-full object-cover"
             />
             <h3 className="mt-4 text-lg font-medium text-zinc-800 dark:text-zinc-100">Jasmine Linares</h3>
-            <p className="mt-1 text-zinc-600 dark:text-zinc-400">jasmine.linares@utah.edu</p>
+            <p className="mt-1 text-zinc-600 dark:text-zinc-400">Role/Title</p>
           </div>
 
           {/* Member 3 */}
@@ -204,7 +203,7 @@ export default function About() {
               className="h-32 w-32 rounded-full object-cover"
             />
             <h3 className="mt-4 text-lg font-medium text-zinc-800 dark:text-zinc-100">Nathan Porter</h3>
-            <p className="mt-1 text-zinc-600 dark:text-zinc-400">nathan.porter@utah.edu</p>
+            <p className="mt-1 text-zinc-600 dark:text-zinc-400">Role/Title</p>
           </div> 
         </div>
       </section>

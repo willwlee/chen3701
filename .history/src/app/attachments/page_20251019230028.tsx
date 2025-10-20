@@ -115,8 +115,7 @@ export default function Contact() {
           Plots & Data
         </h3>
         <p>Data plots, which are fully described in the Data/Experiments section.</p>
-        
-        <div className="grid grid-cols-1 gap-6 sm:grid-cols-2 lg:grid-cols-3 my-6">
+        <div className="grid grid-cols-1 gap-6 sm:grid-cols-2 lg:grid-cols-3">
           <div className="flex items-center rounded-xl p-4 ring-1 ring-zinc-200">
           <figure className="text-center">
           <Image src={bardata} alt="Tap-water Ca data" width={480} className="mx-auto rounded-xl" />

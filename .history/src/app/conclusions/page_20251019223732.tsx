@@ -100,14 +100,14 @@ export default function Blog() {
     {/* References Section */}
       <section id="members" className="scroll-mt-28 mt-16 rounded-xl bg-zinc-50 dark:bg-zinc-800/25 p-8 shadow-sm">
         <div className="flex items-center space-x-3">
-          <h2 className="text-2xl font-bold text-zinc-800 dark:text-zinc-100 text-center">References</h2>
+          <h2 className="text-2xl font-bold text-zinc-800 dark:text-zinc-100 text-center">References of Similar Experiments</h2>
         </div>
         <div>
           <p>
             [1] EDRO Corporation, “Water Hardness,” EDRO Corporation News, Sep. 25, 2025. [Online]. Available: https://edrocorp.com/141104news.html
           </p>
           <p>
-            [2] G. Cetin, “Removal of hardness of earth alkaline metals from aqueous solutions by ion exchange method,” ISRN Analytical Chemistry, vol. 2014, Art. ID 146046, PDF p. 6, 2014. [Online]. Available: https://doi.org/10.1155/2014/146046
+            [2] G. Cetin, “Removal of hardness of earth alkaline metals from aqueous solutions by ion exchange method,” ISRN Analytical Chemistry, vol. 2014, Article ID 146046, 2014. [Online]. Available: https://doi.org/10.1155/2014/621794
           </p>
         </div>
       </section>

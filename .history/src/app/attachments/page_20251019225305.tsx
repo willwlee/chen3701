@@ -108,16 +108,14 @@ export default function Contact() {
   return (
     <SimpleLayout
       title="Attachments & Works Cited"
-      intro=""
+      intro="Plots showing the requested results, appropriately formatted with labeled and scaled axes to maximize information, and error bars."
     >
-      <div>
+      <div className="space-y-20">
         <h3 className="text-base font-semibold tracking-tight text-zinc-800 dark:text-zinc-100">
-          Plots & Data
+          Plots
         </h3>
-        <p>Data plots, which are fully described in the Data/Experiments section.</p>
-        
-        <div className="grid grid-cols-1 gap-6 sm:grid-cols-2 lg:grid-cols-3 my-6">
-          <div className="flex items-center rounded-xl p-4 ring-1 ring-zinc-200">
+        <div className="grid grid-cols-1 gap-6 sm:grid-cols-2 lg:grid-cols-3">
+          <div className="rounded-xl p-4 ring-1 ring-zinc-200">
           <figure className="text-center">
           <Image src={bardata} alt="Tap-water Ca data" width={480} className="mx-auto rounded-xl" />
           <figcaption className="mt-2 text-sm text-zinc-600 dark:text-zinc-400">
@@ -125,7 +123,7 @@ export default function Contact() {
           </figcaption>
           </figure>
         </div>
-        <div className="flex items-center rounded-xl p-4 ring-1 ring-zinc-200">          
+        <div className="rounded-xl p-4 ring-1 ring-zinc-200">          
           <figure className="text-center">
           <Image src={tapdata} alt="Tap t-test" width={350} className="mx-auto rounded-xl" />
           <figcaption className="mt-2 text-sm text-zinc-600 dark:text-zinc-400">
@@ -133,7 +131,7 @@ export default function Contact() {
           </figcaption>
           </figure>
         </div>
-        <div className="flex items-center rounded-xl p-4 ring-1 ring-zinc-200">
+        <div className="rounded-xl p-4 ring-1 ring-zinc-200">
           <figure className="text-center">
           <Image src={didata} alt="Tap t-test" width={350} className="mx-auto rounded-xl" />
           <figcaption className="mt-2 text-sm text-zinc-600 dark:text-zinc-400">
@@ -142,7 +140,6 @@ export default function Contact() {
           </figure>
         </div>
       </div>
-        <DashedDivider padding={15} />
         <ul
           role="list"
           className="grid gap-x-12 gap-y-16"
