@@ -142,17 +142,6 @@ export default function Contact() {
           </figure>
         </div>
       </div>
-      <div>
-        <h3 className="text-base font-semibold tracking-tight text-zinc-800 dark:text-zinc-100">
-          References
-        </h3>
-        <p>
-          [1] EDRO Corporation, “Water Hardness,” EDRO Corporation News, Sep. 25, 2025. [Online]. Available: https://edrocorp.com/141104news.html <br></br><br></br>
-        </p>
-        <p>
-          [2] G. Cetin, “Removal of hardness of earth alkaline metals from aqueous solutions by ion exchange method,” ISRN Analytical Chemistry, vol. 2014, Art. ID 146046, PDF pp. 4-6, 2014. [Online]. Available: https://doi.org/10.1155/2014/146046
-        </p>
-      </div>
         <DashedDivider padding={15} />
         <ul
           role="list"
@@ -178,6 +167,17 @@ export default function Contact() {
               <span className="hidden group-hover:block ml-2">{contact.link.hover}</span>
             </p>
                 <div className="space-y-2">
+        </div>
+        <div>
+        <h3 className="text-base font-semibold tracking-tight text-zinc-800 dark:text-zinc-100">
+          Plots & Data
+        </h3>
+        <p>
+          [1] EDRO Corporation, “Water Hardness,” EDRO Corporation News, Sep. 25, 2025. [Online]. Available: https://edrocorp.com/141104news.html
+        </p>
+        <p>
+          [2] G. Cetin, “Removal of hardness of earth alkaline metals from aqueous solutions by ion exchange method,” ISRN Analytical Chemistry, vol. 2014, Art. ID 146046, PDF pp. 4-6, 2014. [Online]. Available: https://doi.org/10.1155/2014/146046
+        </p>
         </div>
           </Card>
         )

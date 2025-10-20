@@ -147,7 +147,7 @@ export default function Contact() {
           References
         </h3>
         <p>
-          [1] EDRO Corporation, “Water Hardness,” EDRO Corporation News, Sep. 25, 2025. [Online]. Available: https://edrocorp.com/141104news.html <br></br><br></br>
+          [1] EDRO Corporation, “Water Hardness,” EDRO Corporation News, Sep. 25, 2025. [Online]. Available: https://edrocorp.com/141104news.html
         </p>
         <p>
           [2] G. Cetin, “Removal of hardness of earth alkaline metals from aqueous solutions by ion exchange method,” ISRN Analytical Chemistry, vol. 2014, Art. ID 146046, PDF pp. 4-6, 2014. [Online]. Available: https://doi.org/10.1155/2014/146046
